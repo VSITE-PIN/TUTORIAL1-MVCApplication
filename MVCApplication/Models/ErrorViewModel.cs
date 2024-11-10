@@ -6,4 +6,9 @@ namespace MVCApplication.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
+    public class Dog
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
 }
