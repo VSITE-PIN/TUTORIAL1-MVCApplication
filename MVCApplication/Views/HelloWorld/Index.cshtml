@@ -1,6 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<p>This is Index page of HelloWorld controller</p>
+﻿@model List<Dog>
+
+<ul>
+    @foreach (var dog in Model)
+    {
+        <li>@dog.Name - @dog.Age</li>
+    }
+</ul>
