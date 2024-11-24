@@ -19,8 +19,10 @@ namespace MVCApplication.Controllers
             Dog dog = new Dog();
             return View(dog);
         }
-        public IActionResult CreateDog(Dog dogViewModel) {
+        public IActionResult CreateDog(Dog dogViewModel)
+        {
             dogs.Add(dogViewModel);
             return RedirectToAction("Index");
+        }
     }
 }
